@@ -1,6 +1,6 @@
 # DecisionTree
 
-The project includes implementation of Decision tree classifier without using any libraries. The Objective of this project is to make prediction and train the model over a dataset (Iris data Set, Advertisement dataset), the dataset was split randomly between training and testing set in the ratio of 8:2 respectively. After constructing the decision tree with the training data and applying the appropriate pruning strategy following details are observed in two independent runs,
+The project includes implementation of Decision tree classifier without using any libraries. The Objective of this project is to make prediction and train the model over a dataset (Advertisement dataset, Breast Cancer dataset, Iris dataset). The dataset is split randomly between training and testing set in the ratio of 8:2 respectively. After constructing the decision tree with the training data and applying the appropriate pruning strategy following details are observed in two independent runs:
 
 # Sample Outputs (Advertisement dataset)
 
@@ -46,7 +46,7 @@ The project includes implementation of Decision tree classifier without using an
 
 # Pruning Strategy
 
-To prune each node one by one (except the root and the leaf nodes), and check weather pruning helps in increasing the accuracy, if the accuracy is increased, prune the node which gives the maximum accuracy at the end to construct the final tree. (If the accuracy of 100% is achieved by pruning a node, stop the algorithm right there and do not check for further new nodes).
+To prune each node one by one (except the root and the leaf nodes), and check weather pruning helps in increasing the accuracy, if the accuracy is increased, prune the node which gives the maximum accuracy at the end to construct the final tree (if the accuracy of 100% is achieved by pruning a node, stop the algorithm right there and do not check for further new nodes).
 
 # How to configure
 
