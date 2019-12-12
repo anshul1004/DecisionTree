@@ -1,6 +1,6 @@
 # DecisionTree
 
-The project includes implementation of Decision tree classifier without using any libraries. The Objective of this project is to make prediction and train the model over a dataset (Advertisement dataset, Breast Cancer dataset, Iris dataset). The dataset is split randomly between training and testing set in the ratio of 8:2 respectively. After constructing the decision tree with the training data and applying the appropriate pruning strategy following details are observed in two independent runs:
+The project includes implementation of Decision Tree classifier from scratch, without using any machine learning libraries. The Objective of this project is to make prediction and train the model over a dataset (Advertisement dataset, Breast Cancer dataset, Iris dataset). The dataset is split randomly between training and testing set in the ratio of 8:2 respectively. After constructing the decision tree with the training data and applying the appropriate pruning strategy following details are observed in two independent runs:
 
 # Sample Outputs (Advertisement dataset)
 
