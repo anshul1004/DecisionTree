@@ -1,0 +1,65 @@
+Leaf nodes ****************
+id = 6 depth =2
+id = 110 depth =6
+id = 109 depth =6
+id = 53 depth =5
+id = 25 depth =4
+id = 11 depth =3
+id = 1 depth =1
+
+Non-leaf nodes ****************
+id = 0 depth =0
+id = 2 depth =1
+id = 5 depth =2
+id = 12 depth =3
+id = 26 depth =4
+id = 54 depth =5
+
+Tree before pruning with accuracy: 83.0
+
+Is PetalW >= 1.0? id: 0 depth: 0
+--> True:
+  Is PetalW >= 1.8? id: 2 depth: 1
+  --> True:
+    Leaf id: 6 Predictions: {'Iris-virginica': 38} Label Class: Iris-virginica
+  --> False:
+    Is PetalW >= 1.5? id: 5 depth: 2
+    --> True:
+      Is SepalW >= 2.7? id: 12 depth: 3
+      --> True:
+        Is PetalL >= 5.1? id: 26 depth: 4
+        --> True:
+          Is PetalW >= 1.6? id: 54 depth: 5
+          --> True:
+            Leaf id: 110 Predictions: {'Iris-versicolor': 1} Label Class: Iris-versicolor
+          --> False:
+            Leaf id: 109 Predictions: {'Iris-virginica': 1} Label Class: Iris-virginica
+        --> False:
+          Leaf id: 53 Predictions: {'Iris-versicolor': 9} Label Class: Iris-versicolor
+      --> False:
+        Leaf id: 25 Predictions: {'Iris-virginica': 2} Label Class: Iris-virginica
+    --> False:
+      Leaf id: 11 Predictions: {'Iris-versicolor': 29} Label Class: Iris-versicolor
+--> False:
+  Leaf id: 1 Predictions: {'Iris-setosa': 40} Label Class: Iris-setosa
+
+Pruned node_id: 2 to achieve accuracy: 63.0%
+Pruned node_id: 5 to achieve accuracy: 90.0%
+Pruned node_id: 12 to achieve accuracy: 90.0%
+Pruned node_id: 26 to achieve accuracy: 83.0%
+Pruned node_id: 54 to achieve accuracy: 83.0%
+
+Final node Id to prune (for max accuracy): 5
+
+********************************************************************
+*********** Final Tree with accuracy: 90.0% ************
+********************************************************************
+Is PetalW >= 1.0? id: 0 depth: 0
+--> True:
+  Is PetalW >= 1.8? id: 2 depth: 1
+  --> True:
+    Leaf id: 6 Predictions: {'Iris-virginica': 38} Label Class: Iris-virginica
+  --> False:
+    Leaf id: 5 Predictions: {'Iris-virginica': 3, 'Iris-versicolor': 39} Label Class: Iris-versicolor
+--> False:
+  Leaf id: 1 Predictions: {'Iris-setosa': 40} Label Class: Iris-setosa

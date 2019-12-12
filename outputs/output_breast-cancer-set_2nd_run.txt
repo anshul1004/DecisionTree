@@ -1,0 +1,702 @@
+Leaf nodes ****************
+id = 30 depth =4
+id = 122 depth =6
+id = 121 depth =6
+id = 59 depth =5
+id = 58 depth =5
+id = 57 depth =5
+id = 27 depth =4
+id = 12 depth =3
+id = 50 depth =5
+id = 100 depth =6
+id = 99 depth =6
+id = 98 depth =6
+id = 394 depth =8
+id = 393 depth =8
+id = 195 depth =7
+id = 194 depth =7
+id = 778 depth =9
+id = 777 depth =9
+id = 387 depth =8
+id = 95 depth =6
+id = 4 depth =2
+id = 18 depth =4
+id = 17 depth =4
+id = 70 depth =6
+id = 566 depth =9
+id = 565 depth =9
+id = 281 depth =8
+id = 280 depth =8
+id = 560 depth =9
+id = 1120 depth =10
+id = 4482 depth =12
+id = 4481 depth =12
+id = 2239 depth =11
+id = 33 depth =5
+id = 32 depth =5
+id = 64 depth =6
+id = 258 depth =8
+id = 1034 depth =10
+id = 1033 depth =10
+id = 515 depth =9
+id = 256 depth =8
+id = 8222 depth =13
+id = 16444 depth =14
+id = 16443 depth =14
+id = 16442 depth =14
+id = 65770 depth =16
+id = 65769 depth =16
+id = 131538 depth =17
+id = 131537 depth =17
+id = 65767 depth =16
+id = 8219 depth =13
+id = 2053 depth =11
+id = 1025 depth =10
+id = 1024 depth =10
+id = 2048 depth =11
+id = 4096 depth =12
+id = 16386 depth =14
+id = 32772 depth =15
+id = 65544 depth =16
+id = 262178 depth =18
+id = 524356 depth =19
+id = 1048712 depth =20
+id = 1048711 depth =20
+id = 131087 depth =17
+id = 16384 depth =14
+id = 32768 depth =15
+id = 65536 depth =16
+id = 131072 depth =17
+id = 2097166 depth =21
+id = 2097165 depth =21
+id = 1048581 depth =20
+id = 524289 depth =19
+id = 2097158 depth =21
+id = 2097157 depth =21
+id = 1048577 depth =20
+id = 524287 depth =19
+
+Non-leaf nodes ****************
+id = 0 depth =0
+id = 2 depth =1
+id = 6 depth =2
+id = 14 depth =3
+id = 29 depth =4
+id = 60 depth =5
+id = 13 depth =3
+id = 28 depth =4
+id = 5 depth =2
+id = 11 depth =3
+id = 24 depth =4
+id = 49 depth =5
+id = 23 depth =4
+id = 48 depth =5
+id = 97 depth =6
+id = 196 depth =7
+id = 47 depth =5
+id = 96 depth =6
+id = 193 depth =7
+id = 388 depth =8
+id = 1 depth =1
+id = 3 depth =2
+id = 8 depth =3
+id = 7 depth =3
+id = 16 depth =4
+id = 34 depth =5
+id = 69 depth =6
+id = 140 depth =7
+id = 282 depth =8
+id = 139 depth =7
+id = 279 depth =8
+id = 559 depth =9
+id = 1119 depth =10
+id = 2240 depth =11
+id = 15 depth =4
+id = 31 depth =5
+id = 63 depth =6
+id = 128 depth =7
+id = 257 depth =8
+id = 516 depth =9
+id = 127 depth =7
+id = 255 depth =8
+id = 512 depth =9
+id = 1026 depth =10
+id = 2054 depth =11
+id = 4110 depth =12
+id = 8221 depth =13
+id = 4109 depth =12
+id = 8220 depth =13
+id = 16441 depth =14
+id = 32884 depth =15
+id = 32883 depth =15
+id = 65768 depth =16
+id = 511 depth =9
+id = 1023 depth =10
+id = 2047 depth =11
+id = 4095 depth =12
+id = 8192 depth =13
+id = 16385 depth =14
+id = 32771 depth =15
+id = 65543 depth =16
+id = 131088 depth =17
+id = 262177 depth =18
+id = 524355 depth =19
+id = 8191 depth =13
+id = 16383 depth =14
+id = 32767 depth =15
+id = 65535 depth =16
+id = 131071 depth =17
+id = 262144 depth =18
+id = 524290 depth =19
+id = 1048582 depth =20
+id = 262143 depth =18
+id = 524288 depth =19
+id = 1048578 depth =20
+
+Tree before pruning with accuracy: 69.0
+
+Is deb_malig >= 3? id: 0 depth: 0
+--> True:
+  Is node_caps == yes? id: 2 depth: 1
+  --> True:
+    Is breast == right? id: 6 depth: 2
+    --> True:
+      Is irradiate == yes? id: 14 depth: 3
+      --> True:
+        Leaf id: 30 Predictions: {'no-recurrence-events': 2} Label Class: no-recurrence-events
+      --> False:
+        Is tumor_size == 25-29? id: 29 depth: 4
+        --> True:
+          Is inv_nodes == 09-Nov? id: 60 depth: 5
+          --> True:
+            Leaf id: 122 Predictions: {'recurrence-events': 1} Label Class: recurrence-events
+          --> False:
+            Leaf id: 121 Predictions: {'no-recurrence-events': 2} Label Class: no-recurrence-events
+        --> False:
+          Leaf id: 59 Predictions: {'recurrence-events': 6} Label Class: recurrence-events
+    --> False:
+      Is inv_nodes == 03-May? id: 13 depth: 3
+      --> True:
+        Is irradiate == yes? id: 28 depth: 4
+        --> True:
+          Leaf id: 58 Predictions: {'recurrence-events': 2} Label Class: recurrence-events
+        --> False:
+          Leaf id: 57 Predictions: {'no-recurrence-events': 1} Label Class: no-recurrence-events
+      --> False:
+        Leaf id: 27 Predictions: {'recurrence-events': 12} Label Class: recurrence-events
+  --> False:
+    Is inv_nodes == 03-May? id: 5 depth: 2
+    --> True:
+      Leaf id: 12 Predictions: {'recurrence-events': 4} Label Class: recurrence-events
+    --> False:
+      Is irradiate == yes? id: 11 depth: 3
+      --> True:
+        Is node_caps == ?? id: 24 depth: 4
+        --> True:
+          Leaf id: 50 Predictions: {'no-recurrence-events': 2} Label Class: no-recurrence-events
+        --> False:
+          Is Age == 40-49? id: 49 depth: 5
+          --> True:
+            Leaf id: 100 Predictions: {'no-recurrence-events': 2} Label Class: no-recurrence-events
+          --> False:
+            Leaf id: 99 Predictions: {'recurrence-events': 6} Label Class: recurrence-events
+      --> False:
+        Is menopause == premeno? id: 23 depth: 4
+        --> True:
+          Is tumor_size == 35-39? id: 48 depth: 5
+          --> True:
+            Leaf id: 98 Predictions: {'recurrence-events': 2} Label Class: recurrence-events
+          --> False:
+            Is breast-quad == right_up? id: 97 depth: 6
+            --> True:
+              Is breast == left? id: 196 depth: 7
+              --> True:
+                Leaf id: 394 Predictions: {'recurrence-events': 2} Label Class: recurrence-events
+              --> False:
+                Leaf id: 393 Predictions: {'no-recurrence-events': 1} Label Class: no-recurrence-events
+            --> False:
+              Leaf id: 195 Predictions: {'no-recurrence-events': 4} Label Class: no-recurrence-events
+        --> False:
+          Is Age == 60-69? id: 47 depth: 5
+          --> True:
+            Is tumor_size == 20-24? id: 96 depth: 6
+            --> True:
+              Leaf id: 194 Predictions: {'recurrence-events': 1} Label Class: recurrence-events
+            --> False:
+              Is breast-quad == left_up? id: 193 depth: 7
+              --> True:
+                Is breast == left? id: 388 depth: 8
+                --> True:
+                  Leaf id: 778 Predictions: {'recurrence-events': 1} Label Class: recurrence-events
+                --> False:
+                  Leaf id: 777 Predictions: {'no-recurrence-events': 1} Label Class: no-recurrence-events
+              --> False:
+                Leaf id: 387 Predictions: {'no-recurrence-events': 2} Label Class: no-recurrence-events
+          --> False:
+            Leaf id: 95 Predictions: {'no-recurrence-events': 10} Label Class: no-recurrence-events
+--> False:
+  Is tumor_size == Oct-14? id: 1 depth: 1
+  --> True:
+    Leaf id: 4 Predictions: {'no-recurrence-events': 22} Label Class: no-recurrence-events
+  --> False:
+    Is inv_nodes == 09-Nov? id: 3 depth: 2
+    --> True:
+      Is tumor_size == 35-39? id: 8 depth: 3
+      --> True:
+        Leaf id: 18 Predictions: {'no-recurrence-events': 2} Label Class: no-recurrence-events
+      --> False:
+        Leaf id: 17 Predictions: {'recurrence-events': 3} Label Class: recurrence-events
+    --> False:
+      Is Age == 50-59? id: 7 depth: 3
+      --> True:
+        Is deb_malig >= 2? id: 16 depth: 4
+        --> True:
+          Is inv_nodes == 03-May? id: 34 depth: 5
+          --> True:
+            Leaf id: 70 Predictions: {'no-recurrence-events': 5} Label Class: no-recurrence-events
+          --> False:
+            Is tumor_size == 20-24? id: 69 depth: 6
+            --> True:
+              Is breast-quad == left_up? id: 140 depth: 7
+              --> True:
+                Is breast == left? id: 282 depth: 8
+                --> True:
+                  Leaf id: 566 Predictions: {'recurrence-events': 1} Label Class: recurrence-events
+                --> False:
+                  Leaf id: 565 Predictions: {'no-recurrence-events': 2} Label Class: no-recurrence-events
+              --> False:
+                Leaf id: 281 Predictions: {'recurrence-events': 1} Label Class: recurrence-events
+            --> False:
+              Is breast == right? id: 139 depth: 7
+              --> True:
+                Leaf id: 280 Predictions: {'no-recurrence-events': 5} Label Class: no-recurrence-events
+              --> False:
+                Is breast-quad == right_up? id: 279 depth: 8
+                --> True:
+                  Leaf id: 560 Predictions: {'recurrence-events': 1} Label Class: recurrence-events
+                --> False:
+                  Is breast-quad == right_low? id: 559 depth: 9
+                  --> True:
+                    Leaf id: 1120 Predictions: {'recurrence-events': 1} Label Class: recurrence-events
+                  --> False:
+                    Is tumor_size == 15-19? id: 1119 depth: 10
+                    --> True:
+                      Is irradiate == yes? id: 2240 depth: 11
+                      --> True:
+                        Leaf id: 4482 Predictions: {'no-recurrence-events': 1} Label Class: no-recurrence-events
+                      --> False:
+                        Leaf id: 4481 Predictions: {'recurrence-events': 1} Label Class: recurrence-events
+                    --> False:
+                      Leaf id: 2239 Predictions: {'no-recurrence-events': 8} Label Class: no-recurrence-events
+        --> False:
+          Leaf id: 33 Predictions: {'no-recurrence-events': 15} Label Class: no-recurrence-events
+      --> False:
+        Is breast-quad == right_low? id: 15 depth: 4
+        --> True:
+          Leaf id: 32 Predictions: {'no-recurrence-events': 11} Label Class: no-recurrence-events
+        --> False:
+          Is inv_nodes == 06-Aug? id: 31 depth: 5
+          --> True:
+            Leaf id: 64 Predictions: {'no-recurrence-events': 5} Label Class: no-recurrence-events
+          --> False:
+            Is node_caps == yes? id: 63 depth: 6
+            --> True:
+              Is breast-quad == left_up? id: 128 depth: 7
+              --> True:
+                Leaf id: 258 Predictions: {'no-recurrence-events': 2} Label Class: no-recurrence-events
+              --> False:
+                Is breast-quad == left_low? id: 257 depth: 8
+                --> True:
+                  Is breast == left? id: 516 depth: 9
+                  --> True:
+                    Leaf id: 1034 Predictions: {'recurrence-events': 1} Label Class: recurrence-events
+                  --> False:
+                    Leaf id: 1033 Predictions: {'no-recurrence-events': 1} Label Class: no-recurrence-events
+                --> False:
+                  Leaf id: 515 Predictions: {'recurrence-events': 4} Label Class: recurrence-events
+            --> False:
+              Is node_caps == ?? id: 127 depth: 7
+              --> True:
+                Leaf id: 256 Predictions: {'no-recurrence-events': 2} Label Class: no-recurrence-events
+              --> False:
+                Is breast == left? id: 255 depth: 8
+                --> True:
+                  Is inv_nodes == 0-2? id: 512 depth: 9
+                  --> True:
+                    Is menopause == premeno? id: 1026 depth: 10
+                    --> True:
+                      Is breast-quad == left_up? id: 2054 depth: 11
+                      --> True:
+                        Is tumor_size == 25-29? id: 4110 depth: 12
+                        --> True:
+                          Leaf id: 8222 Predictions: {'no-recurrence-events': 2} Label Class: no-recurrence-events
+                        --> False:
+                          Is tumor_size == 30-34? id: 8221 depth: 13
+                          --> True:
+                            Leaf id: 16444 Predictions: {'recurrence-events': 1, 'no-recurrence-events': 1} Label Class: recurrence-events
+                          --> False:
+                            Leaf id: 16443 Predictions: {'recurrence-events': 2} Label Class: recurrence-events
+                      --> False:
+                        Is Age == 40-49? id: 4109 depth: 12
+                        --> True:
+                          Is tumor_size == 25-29? id: 8220 depth: 13
+                          --> True:
+                            Leaf id: 16442 Predictions: {'recurrence-events': 1} Label Class: recurrence-events
+                          --> False:
+                            Is tumor_size == 30-34? id: 16441 depth: 14
+                            --> True:
+                              Is irradiate == yes? id: 32884 depth: 15
+                              --> True:
+                                Leaf id: 65770 Predictions: {'recurrence-events': 1} Label Class: recurrence-events
+                              --> False:
+                                Leaf id: 65769 Predictions: {'no-recurrence-events': 1} Label Class: no-recurrence-events
+                            --> False:
+                              Is tumor_size == 20-24? id: 32883 depth: 15
+                              --> True:
+                                Is breast-quad == left_low? id: 65768 depth: 16
+                                --> True:
+                                  Leaf id: 131538 Predictions: {'no-recurrence-events': 1, 'recurrence-events': 1} Label Class: no-recurrence-events
+                                --> False:
+                                  Leaf id: 131537 Predictions: {'no-recurrence-events': 1} Label Class: no-recurrence-events
+                              --> False:
+                                Leaf id: 65767 Predictions: {'no-recurrence-events': 5} Label Class: no-recurrence-events
+                        --> False:
+                          Leaf id: 8219 Predictions: {'no-recurrence-events': 4} Label Class: no-recurrence-events
+                    --> False:
+                      Leaf id: 2053 Predictions: {'no-recurrence-events': 12} Label Class: no-recurrence-events
+                  --> False:
+                    Leaf id: 1025 Predictions: {'recurrence-events': 1} Label Class: recurrence-events
+                --> False:
+                  Is tumor_size == 45-49? id: 511 depth: 9
+                  --> True:
+                    Leaf id: 1024 Predictions: {'recurrence-events': 1} Label Class: recurrence-events
+                  --> False:
+                    Is breast-quad == right_up? id: 1023 depth: 10
+                    --> True:
+                      Leaf id: 2048 Predictions: {'no-recurrence-events': 3} Label Class: no-recurrence-events
+                    --> False:
+                      Is tumor_size == 35-39? id: 2047 depth: 11
+                      --> True:
+                        Leaf id: 4096 Predictions: {'recurrence-events': 1} Label Class: recurrence-events
+                      --> False:
+                        Is breast-quad == left_low? id: 4095 depth: 12
+                        --> True:
+                          Is tumor_size == 20-24? id: 8192 depth: 13
+                          --> True:
+                            Leaf id: 16386 Predictions: {'no-recurrence-events': 2} Label Class: no-recurrence-events
+                          --> False:
+                            Is tumor_size == 50-54? id: 16385 depth: 14
+                            --> True:
+                              Leaf id: 32772 Predictions: {'recurrence-events': 1} Label Class: recurrence-events
+                            --> False:
+                              Is irradiate == yes? id: 32771 depth: 15
+                              --> True:
+                                Leaf id: 65544 Predictions: {'no-recurrence-events': 1} Label Class: no-recurrence-events
+                              --> False:
+                                Is deb_malig >= 2? id: 65543 depth: 16
+                                --> True:
+                                  Is menopause == ge40? id: 131088 depth: 17
+                                  --> True:
+                                    Leaf id: 262178 Predictions: {'recurrence-events': 1} Label Class: recurrence-events
+                                  --> False:
+                                    Is tumor_size == 40-44? id: 262177 depth: 18
+                                    --> True:
+                                      Leaf id: 524356 Predictions: {'no-recurrence-events': 1} Label Class: no-recurrence-events
+                                    --> False:
+                                      Is Age == 40-49? id: 524355 depth: 19
+                                      --> True:
+                                        Leaf id: 1048712 Predictions: {'recurrence-events': 2, 'no-recurrence-events': 1} Label Class: recurrence-events
+                                      --> False:
+                                        Leaf id: 1048711 Predictions: {'no-recurrence-events': 1} Label Class: no-recurrence-events
+                                --> False:
+                                  Leaf id: 131087 Predictions: {'recurrence-events': 1} Label Class: recurrence-events
+                        --> False:
+                          Is tumor_size == 40-44? id: 8191 depth: 13
+                          --> True:
+                            Leaf id: 16384 Predictions: {'no-recurrence-events': 3} Label Class: no-recurrence-events
+                          --> False:
+                            Is tumor_size == 15-19? id: 16383 depth: 14
+                            --> True:
+                              Leaf id: 32768 Predictions: {'no-recurrence-events': 2} Label Class: no-recurrence-events
+                            --> False:
+                              Is tumor_size == 25-29? id: 32767 depth: 15
+                              --> True:
+                                Leaf id: 65536 Predictions: {'no-recurrence-events': 2} Label Class: no-recurrence-events
+                              --> False:
+                                Is irradiate == yes? id: 65535 depth: 16
+                                --> True:
+                                  Leaf id: 131072 Predictions: {'no-recurrence-events': 1} Label Class: no-recurrence-events
+                                --> False:
+                                  Is tumor_size == 20-24? id: 131071 depth: 17
+                                  --> True:
+                                    Is menopause == ge40? id: 262144 depth: 18
+                                    --> True:
+                                      Is deb_malig >= 2? id: 524290 depth: 19
+                                      --> True:
+                                        Is Age == 60-69? id: 1048582 depth: 20
+                                        --> True:
+                                          Leaf id: 2097166 Predictions: {'no-recurrence-events': 1} Label Class: no-recurrence-events
+                                        --> False:
+                                          Leaf id: 2097165 Predictions: {'recurrence-events': 1} Label Class: recurrence-events
+                                      --> False:
+                                        Leaf id: 1048581 Predictions: {'recurrence-events': 1} Label Class: recurrence-events
+                                    --> False:
+                                      Leaf id: 524289 Predictions: {'no-recurrence-events': 3} Label Class: no-recurrence-events
+                                  --> False:
+                                    Is inv_nodes == 0-2? id: 262143 depth: 18
+                                    --> True:
+                                      Is Age == 30-39? id: 524288 depth: 19
+                                      --> True:
+                                        Is breast-quad == central? id: 1048578 depth: 20
+                                        --> True:
+                                          Leaf id: 2097158 Predictions: {'recurrence-events': 1, 'no-recurrence-events': 1} Label Class: recurrence-events
+                                        --> False:
+                                          Leaf id: 2097157 Predictions: {'recurrence-events': 1} Label Class: recurrence-events
+                                      --> False:
+                                        Leaf id: 1048577 Predictions: {'no-recurrence-events': 2} Label Class: no-recurrence-events
+                                    --> False:
+                                      Leaf id: 524287 Predictions: {'recurrence-events': 1} Label Class: recurrence-events
+Pruned node_id: 2 to achieve accuracy: 60.0%
+Pruned node_id: 6 to achieve accuracy: 67.0%
+Pruned node_id: 14 to achieve accuracy: 67.0%
+Pruned node_id: 29 to achieve accuracy: 69.0%
+Pruned node_id: 60 to achieve accuracy: 69.0%
+Pruned node_id: 13 to achieve accuracy: 69.0%
+Pruned node_id: 28 to achieve accuracy: 69.0%
+Pruned node_id: 5 to achieve accuracy: 71.0%
+Pruned node_id: 11 to achieve accuracy: 71.0%
+Pruned node_id: 24 to achieve accuracy: 67.0%
+Pruned node_id: 49 to achieve accuracy: 67.0%
+Pruned node_id: 23 to achieve accuracy: 69.0%
+Pruned node_id: 48 to achieve accuracy: 69.0%
+Pruned node_id: 97 to achieve accuracy: 69.0%
+Pruned node_id: 196 to achieve accuracy: 71.0%
+Pruned node_id: 47 to achieve accuracy: 69.0%
+Pruned node_id: 96 to achieve accuracy: 69.0%
+Pruned node_id: 193 to achieve accuracy: 69.0%
+Pruned node_id: 388 to achieve accuracy: 71.0%
+Pruned node_id: 1 to achieve accuracy: 72.0%
+Pruned node_id: 3 to achieve accuracy: 72.0%
+Pruned node_id: 8 to achieve accuracy: 69.0%
+Pruned node_id: 7 to achieve accuracy: 72.0%
+Pruned node_id: 16 to achieve accuracy: 69.0%
+Pruned node_id: 34 to achieve accuracy: 69.0%
+Pruned node_id: 69 to achieve accuracy: 69.0%
+Pruned node_id: 140 to achieve accuracy: 69.0%
+Pruned node_id: 282 to achieve accuracy: 69.0%
+Pruned node_id: 139 to achieve accuracy: 69.0%
+Pruned node_id: 279 to achieve accuracy: 69.0%
+Pruned node_id: 559 to achieve accuracy: 71.0%
+Pruned node_id: 1119 to achieve accuracy: 71.0%
+Pruned node_id: 2240 to achieve accuracy: 69.0%
+Pruned node_id: 15 to achieve accuracy: 72.0%
+Pruned node_id: 31 to achieve accuracy: 72.0%
+Pruned node_id: 63 to achieve accuracy: 72.0%
+Pruned node_id: 128 to achieve accuracy: 69.0%
+Pruned node_id: 257 to achieve accuracy: 69.0%
+Pruned node_id: 516 to achieve accuracy: 67.0%
+Pruned node_id: 127 to achieve accuracy: 74.0%
+Pruned node_id: 255 to achieve accuracy: 74.0%
+Pruned node_id: 512 to achieve accuracy: 71.0%
+Pruned node_id: 1026 to achieve accuracy: 71.0%
+Pruned node_id: 2054 to achieve accuracy: 71.0%
+Pruned node_id: 4110 to achieve accuracy: 69.0%
+Pruned node_id: 8221 to achieve accuracy: 69.0%
+Pruned node_id: 4109 to achieve accuracy: 69.0%
+Pruned node_id: 8220 to achieve accuracy: 69.0%
+Pruned node_id: 16441 to achieve accuracy: 69.0%
+Pruned node_id: 32884 to achieve accuracy: 67.0%
+Pruned node_id: 32883 to achieve accuracy: 69.0%
+Pruned node_id: 65768 to achieve accuracy: 69.0%
+Pruned node_id: 511 to achieve accuracy: 72.0%
+Pruned node_id: 1023 to achieve accuracy: 72.0%
+Pruned node_id: 2047 to achieve accuracy: 72.0%
+Pruned node_id: 4095 to achieve accuracy: 72.0%
+Pruned node_id: 8192 to achieve accuracy: 72.0%
+Pruned node_id: 16385 to achieve accuracy: 69.0%
+Pruned node_id: 32771 to achieve accuracy: 69.0%
+Pruned node_id: 65543 to achieve accuracy: 69.0%
+Pruned node_id: 131088 to achieve accuracy: 69.0%
+Pruned node_id: 262177 to achieve accuracy: 69.0%
+Pruned node_id: 524355 to achieve accuracy: 69.0%
+Pruned node_id: 8191 to achieve accuracy: 69.0%
+Pruned node_id: 16383 to achieve accuracy: 69.0%
+Pruned node_id: 32767 to achieve accuracy: 69.0%
+Pruned node_id: 65535 to achieve accuracy: 69.0%
+Pruned node_id: 131071 to achieve accuracy: 69.0%
+Pruned node_id: 262144 to achieve accuracy: 69.0%
+Pruned node_id: 524290 to achieve accuracy: 69.0%
+Pruned node_id: 1048582 to achieve accuracy: 69.0%
+Pruned node_id: 262143 to achieve accuracy: 69.0%
+Pruned node_id: 524288 to achieve accuracy: 69.0%
+Pruned node_id: 1048578 to achieve accuracy: 69.0%
+
+Final node Id to prune (for max accuracy): 127
+
+********************************************************************
+*********** Final Tree with accuracy: 74.0%  ************
+********************************************************************
+
+Is deb_malig >= 3? id: 0 depth: 0
+--> True:
+  Is node_caps == yes? id: 2 depth: 1
+  --> True:
+    Is breast == right? id: 6 depth: 2
+    --> True:
+      Is irradiate == yes? id: 14 depth: 3
+      --> True:
+        Leaf id: 30 Predictions: {'no-recurrence-events': 2} Label Class: no-recurrence-events
+      --> False:
+        Is tumor_size == 25-29? id: 29 depth: 4
+        --> True:
+          Is inv_nodes == 09-Nov? id: 60 depth: 5
+          --> True:
+            Leaf id: 122 Predictions: {'recurrence-events': 1} Label Class: recurrence-events
+          --> False:
+            Leaf id: 121 Predictions: {'no-recurrence-events': 2} Label Class: no-recurrence-events
+        --> False:
+          Leaf id: 59 Predictions: {'recurrence-events': 6} Label Class: recurrence-events
+    --> False:
+      Is inv_nodes == 03-May? id: 13 depth: 3
+      --> True:
+        Is irradiate == yes? id: 28 depth: 4
+        --> True:
+          Leaf id: 58 Predictions: {'recurrence-events': 2} Label Class: recurrence-events
+        --> False:
+          Leaf id: 57 Predictions: {'no-recurrence-events': 1} Label Class: no-recurrence-events
+      --> False:
+        Leaf id: 27 Predictions: {'recurrence-events': 12} Label Class: recurrence-events
+  --> False:
+    Is inv_nodes == 03-May? id: 5 depth: 2
+    --> True:
+      Leaf id: 12 Predictions: {'recurrence-events': 4} Label Class: recurrence-events
+    --> False:
+      Is irradiate == yes? id: 11 depth: 3
+      --> True:
+        Is node_caps == ?? id: 24 depth: 4
+        --> True:
+          Leaf id: 50 Predictions: {'no-recurrence-events': 2} Label Class: no-recurrence-events
+        --> False:
+          Is Age == 40-49? id: 49 depth: 5
+          --> True:
+            Leaf id: 100 Predictions: {'no-recurrence-events': 2} Label Class: no-recurrence-events
+          --> False:
+            Leaf id: 99 Predictions: {'recurrence-events': 6} Label Class: recurrence-events
+      --> False:
+        Is menopause == premeno? id: 23 depth: 4
+        --> True:
+          Is tumor_size == 35-39? id: 48 depth: 5
+          --> True:
+            Leaf id: 98 Predictions: {'recurrence-events': 2} Label Class: recurrence-events
+          --> False:
+            Is breast-quad == right_up? id: 97 depth: 6
+            --> True:
+              Is breast == left? id: 196 depth: 7
+              --> True:
+                Leaf id: 394 Predictions: {'recurrence-events': 2} Label Class: recurrence-events
+              --> False:
+                Leaf id: 393 Predictions: {'no-recurrence-events': 1} Label Class: no-recurrence-events
+            --> False:
+              Leaf id: 195 Predictions: {'no-recurrence-events': 4} Label Class: no-recurrence-events
+        --> False:
+          Is Age == 60-69? id: 47 depth: 5
+          --> True:
+            Is tumor_size == 20-24? id: 96 depth: 6
+            --> True:
+              Leaf id: 194 Predictions: {'recurrence-events': 1} Label Class: recurrence-events
+            --> False:
+              Is breast-quad == left_up? id: 193 depth: 7
+              --> True:
+                Is breast == left? id: 388 depth: 8
+                --> True:
+                  Leaf id: 778 Predictions: {'recurrence-events': 1} Label Class: recurrence-events
+                --> False:
+                  Leaf id: 777 Predictions: {'no-recurrence-events': 1} Label Class: no-recurrence-events
+              --> False:
+                Leaf id: 387 Predictions: {'no-recurrence-events': 2} Label Class: no-recurrence-events
+          --> False:
+            Leaf id: 95 Predictions: {'no-recurrence-events': 10} Label Class: no-recurrence-events
+--> False:
+  Is tumor_size == Oct-14? id: 1 depth: 1
+  --> True:
+    Leaf id: 4 Predictions: {'no-recurrence-events': 22} Label Class: no-recurrence-events
+  --> False:
+    Is inv_nodes == 09-Nov? id: 3 depth: 2
+    --> True:
+      Is tumor_size == 35-39? id: 8 depth: 3
+      --> True:
+        Leaf id: 18 Predictions: {'no-recurrence-events': 2} Label Class: no-recurrence-events
+      --> False:
+        Leaf id: 17 Predictions: {'recurrence-events': 3} Label Class: recurrence-events
+    --> False:
+      Is Age == 50-59? id: 7 depth: 3
+      --> True:
+        Is deb_malig >= 2? id: 16 depth: 4
+        --> True:
+          Is inv_nodes == 03-May? id: 34 depth: 5
+          --> True:
+            Leaf id: 70 Predictions: {'no-recurrence-events': 5} Label Class: no-recurrence-events
+          --> False:
+            Is tumor_size == 20-24? id: 69 depth: 6
+            --> True:
+              Is breast-quad == left_up? id: 140 depth: 7
+              --> True:
+                Is breast == left? id: 282 depth: 8
+                --> True:
+                  Leaf id: 566 Predictions: {'recurrence-events': 1} Label Class: recurrence-events
+                --> False:
+                  Leaf id: 565 Predictions: {'no-recurrence-events': 2} Label Class: no-recurrence-events
+              --> False:
+                Leaf id: 281 Predictions: {'recurrence-events': 1} Label Class: recurrence-events
+            --> False:
+              Is breast == right? id: 139 depth: 7
+              --> True:
+                Leaf id: 280 Predictions: {'no-recurrence-events': 5} Label Class: no-recurrence-events
+              --> False:
+                Is breast-quad == right_up? id: 279 depth: 8
+                --> True:
+                  Leaf id: 560 Predictions: {'recurrence-events': 1} Label Class: recurrence-events
+                --> False:
+                  Is breast-quad == right_low? id: 559 depth: 9
+                  --> True:
+                    Leaf id: 1120 Predictions: {'recurrence-events': 1} Label Class: recurrence-events
+                  --> False:
+                    Is tumor_size == 15-19? id: 1119 depth: 10
+                    --> True:
+                      Is irradiate == yes? id: 2240 depth: 11
+                      --> True:
+                        Leaf id: 4482 Predictions: {'no-recurrence-events': 1} Label Class: no-recurrence-events
+                      --> False:
+                        Leaf id: 4481 Predictions: {'recurrence-events': 1} Label Class: recurrence-events
+                    --> False:
+                      Leaf id: 2239 Predictions: {'no-recurrence-events': 8} Label Class: no-recurrence-events
+        --> False:
+          Leaf id: 33 Predictions: {'no-recurrence-events': 15} Label Class: no-recurrence-events
+      --> False:
+        Is breast-quad == right_low? id: 15 depth: 4
+        --> True:
+          Leaf id: 32 Predictions: {'no-recurrence-events': 11} Label Class: no-recurrence-events
+        --> False:
+          Is inv_nodes == 06-Aug? id: 31 depth: 5
+          --> True:
+            Leaf id: 64 Predictions: {'no-recurrence-events': 5} Label Class: no-recurrence-events
+          --> False:
+            Is node_caps == yes? id: 63 depth: 6
+            --> True:
+              Is breast-quad == left_up? id: 128 depth: 7
+              --> True:
+                Leaf id: 258 Predictions: {'no-recurrence-events': 2} Label Class: no-recurrence-events
+              --> False:
+                Is breast-quad == left_low? id: 257 depth: 8
+                --> True:
+                  Is breast == left? id: 516 depth: 9
+                  --> True:
+                    Leaf id: 1034 Predictions: {'recurrence-events': 1} Label Class: recurrence-events
+                  --> False:
+                    Leaf id: 1033 Predictions: {'no-recurrence-events': 1} Label Class: no-recurrence-events
+                --> False:
+                  Leaf id: 515 Predictions: {'recurrence-events': 4} Label Class: recurrence-events
+            --> False:
+              Leaf id: 127 Predictions: {'no-recurrence-events': 53, 'recurrence-events': 19} Label Class: no-recurrence-events
+
+Process finished with exit code 0

@@ -1,0 +1,99 @@
+Leaf nodes ****************
+id = 14 depth =3
+id = 28 depth =4
+id = 56 depth =5
+id = 226 depth =7
+id = 452 depth =8
+id = 451 depth =8
+id = 111 depth =6
+id = 12 depth =3
+id = 11 depth =3
+id = 1 depth =1
+
+Non-leaf nodes ****************
+id = 0 depth =0
+id = 2 depth =1
+id = 6 depth =2
+id = 13 depth =3
+id = 27 depth =4
+id = 55 depth =5
+id = 112 depth =6
+id = 225 depth =7
+id = 5 depth =2
+
+Tree before pruning with accuracy: 93.0
+
+Is PetalW >= 1.0? id: 0 depth: 0
+--> True:
+  Is PetalL >= 4.8? id: 2 depth: 1
+  --> True:
+    Is PetalW >= 1.9? id: 6 depth: 2
+    --> True:
+      Leaf id: 14 Predictions: {'Iris-virginica': 27} Label Class: Iris-virginica
+    --> False:
+      Is PetalL >= 5.5? id: 13 depth: 3
+      --> True:
+        Leaf id: 28 Predictions: {'Iris-virginica': 7} Label Class: Iris-virginica
+      --> False:
+        Is SepalL >= 6.7? id: 27 depth: 4
+        --> True:
+          Leaf id: 56 Predictions: {'Iris-versicolor': 2} Label Class: Iris-versicolor
+        --> False:
+          Is SepalL >= 6.0? id: 55 depth: 5
+          --> True:
+            Is SepalW >= 2.8? id: 112 depth: 6
+            --> True:
+              Leaf id: 226 Predictions: {'Iris-virginica': 3} Label Class: Iris-virginica
+            --> False:
+              Is SepalW >= 2.5? id: 225 depth: 7
+              --> True:
+                Leaf id: 452 Predictions: {'Iris-versicolor': 2} Label Class: Iris-versicolor
+              --> False:
+                Leaf id: 451 Predictions: {'Iris-virginica': 1} Label Class: Iris-virginica
+          --> False:
+            Leaf id: 111 Predictions: {'Iris-versicolor': 1} Label Class: Iris-versicolor
+  --> False:
+    Is PetalW >= 1.7? id: 5 depth: 2
+    --> True:
+      Leaf id: 12 Predictions: {'Iris-virginica': 1} Label Class: Iris-virginica
+    --> False:
+      Leaf id: 11 Predictions: {'Iris-versicolor': 38} Label Class: Iris-versicolor
+--> False:
+  Leaf id: 1 Predictions: {'Iris-setosa': 38} Label Class: Iris-setosa
+
+Pruned node_id: 2 to achieve accuracy: 63.0%
+Pruned node_id: 6 to achieve accuracy: 97.0%
+Pruned node_id: 13 to achieve accuracy: 97.0%
+Pruned node_id: 27 to achieve accuracy: 90.0%
+Pruned node_id: 55 to achieve accuracy: 100.0%
+
+Final node Id to prune (for max accuracy): 55
+
+********************************************************************
+*********** Final Tree with accuracy: 100.0%  ************
+********************************************************************
+Is PetalW >= 1.0? id: 0 depth: 0
+--> True:
+  Is PetalL >= 4.8? id: 2 depth: 1
+  --> True:
+    Is PetalW >= 1.9? id: 6 depth: 2
+    --> True:
+      Leaf id: 14 Predictions: {'Iris-virginica': 27} Label Class: Iris-virginica
+    --> False:
+      Is PetalL >= 5.5? id: 13 depth: 3
+      --> True:
+        Leaf id: 28 Predictions: {'Iris-virginica': 7} Label Class: Iris-virginica
+      --> False:
+        Is SepalL >= 6.7? id: 27 depth: 4
+        --> True:
+          Leaf id: 56 Predictions: {'Iris-versicolor': 2} Label Class: Iris-versicolor
+        --> False:
+          Leaf id: 55 Predictions: {'Iris-virginica': 4, 'Iris-versicolor': 3} Label Class: Iris-virginica
+  --> False:
+    Is PetalW >= 1.7? id: 5 depth: 2
+    --> True:
+      Leaf id: 12 Predictions: {'Iris-virginica': 1} Label Class: Iris-virginica
+    --> False:
+      Leaf id: 11 Predictions: {'Iris-versicolor': 38} Label Class: Iris-versicolor
+--> False:
+  Leaf id: 1 Predictions: {'Iris-setosa': 38} Label Class: Iris-setosa
